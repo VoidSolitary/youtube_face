@@ -1,0 +1,13 @@
+    '''
+			resized = Image.fromarray(np.uint8(resize_image(image)))
+			x1, x2, y1, y2 = make_box(float(parts[1]), float(parts[2]), float(parts[3]), image)
+			draw = ImageDraw.Draw(resized)
+			draw.line([(x1, y1), (x2, y1), (x2, y2), (x1, y2), (x1, y1)], (255, 0, 0))
+			resized.save('new_box.jpg', 'jpeg')
+
+			old_draw = ImageDraw.Draw(image)
+			x, y, size = float(parts[1]), float(parts[2]), float(parts[3])
+			old_draw.line([(x - size/2, y - size/2), (x + size/2, y - size/2), (x + size/2, y + size/2), (x - size/2, y + size/2), (x - size/2, y - size/2)], (255, 0, 0))
+			image.save('old_box.jpg', 'jpeg')
+		'''
+
